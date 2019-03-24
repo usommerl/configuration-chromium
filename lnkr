@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+install() {
+  local file='chromium-flags.conf'
+  link "$REPOSITORY_ROOT/$file" "${XDG_CONFIG_HOME:-$HOME/.config}/$file"
+}
+
+source <(curl -Lfs https://git.io/lnkr)
